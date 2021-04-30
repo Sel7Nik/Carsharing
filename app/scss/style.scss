@@ -1,0 +1,55 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+
+
+.header{
+  background-color: $brand; //
+  &__inner{
+    display: flex;  //
+    justify-content: space-between; //
+    align-items: center;  //
+    height: 100px;  //
+  }
+}
+
+.menu{
+  &-list{
+    display: flex;  //
+    &__item{
+      margin-right: 30px; //
+      
+      &-link{
+        text-transform: uppercase;  //
+        color: $white;  //
+        font-size: 18px;  //
+        line-height: 21px;  //
+        padding-bottom: 5px;  //
+        transition: all .5s;  //
+        border-bottom: 1px transparent solid; //
+        &:hover {
+          border-bottom: 1px $white solid;  //
+        }
+      }
+    }
+    &__item:last-child{
+      margin-right: 0;  //
+    }
+  }
+}
+
+.phone{
+  color: $white; //
+  font-size: 18px; //
+  line-height: 21px; //
+  transition: all .5s; //
+  padding-bottom: 5px; //
+  border-bottom: 1px transparent solid; //
+  &:hover {
+    border-bottom: 1px $white solid; //
+  }
+}
