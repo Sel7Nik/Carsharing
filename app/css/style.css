@@ -94,3 +94,83 @@ body {
   border-bottom: 1px transparent solid; }
   .phone:hover {
     border-bottom: 1px #fefefe solid; }
+
+.top-block {
+  display: flex;
+  justify-content: space-between;
+  max-height: 800px;
+  padding-bottom: 100px; }
+  .top-block__content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+    text-align: center;
+    padding: 141px 0; }
+    .top-block__content .title {
+      width: 454px;
+      font-family: Fira Sans;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      text-align: center;
+      margin-bottom: 23px; }
+    .top-block__content .motive {
+      width: 470px;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 61px; }
+    .top-block__content .btn-application {
+      padding: 16px 19px 15px 18px;
+      border: 1px solid #322208; }
+    .top-block__content .group {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 104px;
+      width: 100%; }
+      .top-block__content .group .group__item {
+        width: 150px;
+        height: 150px;
+        border: 1px #322208 solid;
+        transition: all .5s; }
+        .top-block__content .group .group__item:hover {
+          cursor: pointer;
+          transform: scale(1.25); }
+        .top-block__content .group .group__item .group__item-icon {
+          margin: 18px auto 10px; }
+        .top-block__content .group .group__item .group__item-text {
+          padding: 0 11px 14px 10px; }
+  .top-block__choice {
+    display: flex;
+    flex-direction: column; }
+    .top-block__choice-slider .slider {
+      padding-top: 52px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .top-block__choice-slider .slider__description {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 155px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 500;
+        width: 283px; }
+    .top-block__choice-use .use {
+      display: flex;
+      justify-content: center; }
+      .top-block__choice-use .use__rental-link {
+        margin-right: 20px;
+        cursor: pointer;
+        border-bottom: solid transparent 1px;
+        transition: all .5s;
+        padding-bottom: 5px; }
+        .top-block__choice-use .use__rental-link:hover {
+          border-bottom: solid #1b1818 1px; }
+      .top-block__choice-use .use__contract-link {
+        border-bottom: solid #1b1818 1px;
+        cursor: pointer;
+        border-bottom: solid transparent 1px;
+        transition: all .5s;
+        padding-bottom: 5px; }
+        .top-block__choice-use .use__contract-link:hover {
+          border-bottom: solid #1b1818 1px; }

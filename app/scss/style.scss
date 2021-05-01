@@ -53,3 +53,143 @@
     border-bottom: 1px $white solid; //
   }
 }
+
+
+
+.top {
+  &-block{
+    display: flex;
+    justify-content: space-between;
+    max-height: 800px;
+    padding-bottom: 100px;
+    &__content {  //  left block
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      align-items: center;
+      text-align: center;
+      padding: 141px 0;
+      .title {
+        width: 454px;
+        font-family: Fira Sans;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        margin-bottom: 23px;
+      }
+      .motive {
+        width: 470px;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 61px;
+        // text-align: center;
+      }
+      .btn-application {
+        padding: 16px 19px 15px 18px;
+        border: 1px solid $brand;
+      }
+
+      .group {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 104px;
+        width: 100%;
+
+        .group__item {
+          width: 150px;
+          height: 150px;
+          border: 1px $brand solid;
+          transition: all .5s;
+          &:hover{
+            cursor: pointer;
+            transform: scale(1.25);
+            // border: 1px $brand solid;
+
+          }
+
+          .group__item-icon {
+            margin: 18px auto 10px;
+
+          }
+          .group__item-text {
+            padding: 0 11px 14px 10px;
+          }
+        }
+      }
+    }
+
+    &__choice { //  right block
+      display: flex;
+      flex-direction: column;
+      &-slider {
+        .slider {
+          padding-top: 52px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &__img {
+            // height: 450px;
+          }
+          &__description {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 155px;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 500;
+            width: 283px;
+            &-price {}
+            
+            &-property {}
+            
+            &-odometer {}
+          }
+        }
+      }
+      
+      &-use {
+        .use{
+          display: flex;
+          justify-content: center;
+          &__rental {
+            &-link {
+              margin-right: 20px;
+              cursor: pointer;
+              border-bottom: solid transparent 1px;
+              transition: all .5s; //
+              padding-bottom: 5px;
+              &:hover{
+                border-bottom: solid $dark 1px;
+              }
+            }
+          }   
+          &__contract {
+            &-link {
+              border-bottom: solid $dark 1px;
+              cursor: pointer;
+              border-bottom: solid transparent 1px;
+              transition: all .5s; //
+              padding-bottom: 5px;
+              &:hover {
+                border-bottom: solid $dark 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
