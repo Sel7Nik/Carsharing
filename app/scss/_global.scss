@@ -108,9 +108,8 @@ ul.slick-dots {
   }
 }
 
-
-
 .btn-application {
+  display: inline-block;
   text-transform: uppercase;
   padding: 16px 19px 15px 18px;
   background-color: $accent;
@@ -123,8 +122,6 @@ ul.slick-dots {
     border: $accent 1px solid;
   }
 }
-
-
 
 
 .footer {

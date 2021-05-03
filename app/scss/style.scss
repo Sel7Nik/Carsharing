@@ -314,7 +314,8 @@
     }
 
     &__images{
-      align-items: center;
+      // align-items: center;
+      padding-top: 50px;
     }
     &__content{
       text-align: right;
@@ -326,6 +327,9 @@
       width: 300px;
       &-text:first-child{
         margin-bottom: 30px;
+      }
+      &-text:last-child{
+        margin-left: 33px;
       }
 
     }
@@ -458,7 +462,25 @@
 
 
 .footer {
+  height: 200px; //
   &__inner {
-    height: 200px; //
+    padding-top: 75px;
+  }
+
+  .social{
+    &-ul{
+      display: flex;
+      width: 150px;
+      margin: 21px auto;
+      justify-content: space-between;
+      &__li{
+        &-link{
+          &-img{
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
   }
 }

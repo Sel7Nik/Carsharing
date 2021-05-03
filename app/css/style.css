@@ -128,6 +128,7 @@ ul.slick-dots {
     height: 16px; }
 
 .btn-application {
+  display: inline-block;
   text-transform: uppercase;
   padding: 16px 19px 15px 18px;
   background-color: #c5ac2d;
@@ -321,7 +322,7 @@ ul.slick-dots {
           background-color: #1b1818;
           border-radius: 50%; }
     .benefit-block__images {
-      align-items: center; }
+      padding-top: 50px; }
     .benefit-block__content {
       text-align: right; }
     .benefit-block .content {
@@ -331,6 +332,8 @@ ul.slick-dots {
       width: 300px; }
       .benefit-block .content-text:first-child {
         margin-bottom: 30px; }
+      .benefit-block .content-text:last-child {
+        margin-left: 33px; }
     .benefit-block .video-popup {
       display: inline-block;
       margin-left: auto;
@@ -418,5 +421,15 @@ ul.slick-dots {
         color: #c5ac2d;
         border: #c5ac2d 1px solid; }
 
-.footer__inner {
+.footer {
   height: 200px; }
+  .footer__inner {
+    padding-top: 75px; }
+  .footer .social-ul {
+    display: flex;
+    width: 150px;
+    margin: 21px auto;
+    justify-content: space-between; }
+    .footer .social-ul__li-link-img {
+      width: 30px;
+      height: 30px; }
