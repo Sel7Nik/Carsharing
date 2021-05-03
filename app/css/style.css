@@ -415,7 +415,8 @@ ul.slick-dots {
       color: #fefefe;
       padding: 16px 36px;
       cursor: pointer;
-      border: transparent 1px solid; }
+      border: transparent 1px solid;
+      transition: all .5s; }
       .feedback-form .form__btn:hover {
         background-color: #fefefe;
         color: #c5ac2d;
@@ -427,9 +428,7 @@ ul.slick-dots {
     padding-top: 75px; }
   .footer .social-ul {
     display: flex;
-    width: 150px;
-    margin: 21px auto;
-    justify-content: space-between; }
-    .footer .social-ul__li-link-img {
-      width: 30px;
-      height: 30px; }
+    justify-content: center;
+    margin-top: 21px; }
+    .footer .social-ul__li:nth-child(2) {
+      margin: 0px 30px; }

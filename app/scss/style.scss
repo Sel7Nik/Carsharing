@@ -450,6 +450,7 @@
         padding: 16px 36px;
         cursor: pointer;
         border: transparent 1px solid;
+        transition: all .5s;
         &:hover {
           background-color: $white;
           color: $accent;
@@ -470,17 +471,25 @@
   .social{
     &-ul{
       display: flex;
-      width: 150px;
-      margin: 21px auto;
-      justify-content: space-between;
-      &__li{
-        &-link{
-          &-img{
-            width: 30px;
-            height: 30px;
-          }
-        }
+      justify-content: center;
+      margin-top: 21px;
+      &__li:nth-child(2){
+          margin: 0px 30px;
       }
     }
+    // &-ul{
+    //   display: flex;
+    //   width: 150px;
+    //   margin: 21px auto;
+    //   justify-content: space-between;
+    //   &__li{
+    //     &-link{
+    //       &-img{
+    //         width: 30px;
+    //         height: 30px;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
