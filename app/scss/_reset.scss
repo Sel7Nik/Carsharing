@@ -3,9 +3,11 @@ html{
 }
 
 *,
+*:hover,
 *::after,
 *::before{
-  box-sizing: inherit;
+  // box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 ul,
@@ -46,6 +48,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+button{
+  padding: 0;
 }
 
 a {
