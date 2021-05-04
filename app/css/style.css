@@ -30,7 +30,8 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0; }
+  padding: 0px;
+  margin: 0px; }
 
 img {
   max-width: 100%;
@@ -161,7 +162,6 @@ ul.slick-dots {
 .top-block {
   display: flex;
   justify-content: space-between;
-  max-height: 800px;
   padding-bottom: 100px; }
   .top-block__content {
     display: flex;
@@ -250,7 +250,7 @@ ul.slick-dots {
     display: flex;
     width: 100%; }
     .rent-block__div {
-      flex-basis: 25%; }
+      width: 300px; }
       .rent-block__div + .rent-block__div {
         padding-left: 50px; }
       .rent-block__div .block__content {
@@ -278,6 +278,8 @@ ul.slick-dots {
           max-width: 174px;
           margin-bottom: 34px;
           min-height: 41px; }
+        .rent-block__div .card__text {
+          padding: 0; }
     .rent-block__div:nth-child(even) .card__text {
       padding: 0 10px 0; }
 
@@ -428,6 +430,21 @@ ul.slick-dots {
     .footer .social-ul__li:nth-child(2) {
       margin: 0px 30px; }
 
+@media (max-width: 1140px) {
+  .rent-block {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .rent-block__div:nth-child(1) {
+      width: 85%; }
+    .rent-block__div + .rent-block__div {
+      padding-left: 0;
+      max-width: 250px;
+      text-align: center; }
+    .rent-block__div .btn-application {
+      margin: 0 0 50px 70px; }
+    .rent-block__div .card {
+      align-items: center; } }
+
 @media (max-width: 1024px) {
   .top-block {
     flex-direction: column;
@@ -439,7 +456,9 @@ ul.slick-dots {
       width: 80%;
       padding: 40px 0; }
     .top-block__choice {
-      width: 80%; } }
+      width: 80%; }
+      .top-block__choice .slider__description {
+        margin-bottom: 25px; } }
 
 @media (max-width: 860px) {
   .header .menu {
@@ -478,7 +497,9 @@ ul.slick-dots {
         margin: 0; }
         .header .menu-list__item-link {
           padding: 20px 0;
-          display: block; } }
+          display: block; }
+  .rent-block__div + .rent-block__div {
+    margin: 30px; } }
 
 @media (max-width: 768px) {
   .top-block {
@@ -498,13 +519,17 @@ ul.slick-dots {
         .top-block__content .group__item {
           margin: 0 25px 25px; }
     .top-block__choice {
-      width: 100%; }
-      .top-block__choice .slider__description {
-        margin-bottom: 25px; } }
+      width: 100%; } }
 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
   .top-block__content .group__item {
-    width: 50%; } }
+    width: 50%; }
+  .rent {
+    padding: 25px 0; }
+    .rent-block__div {
+      text-align: center; }
+      .rent-block__div .btn-application {
+        margin-left: 0; } }
 
 @media (max-width: 400px) {
   .top-block__choice-use .use {

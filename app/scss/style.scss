@@ -47,7 +47,7 @@
   &-block{
     display: flex;
     justify-content: space-between;
-    max-height: 800px;
+    // max-height: 800px;
     padding-bottom: 100px;
     &__content {  //  left block
       display: flex;
@@ -210,7 +210,8 @@
       &+&{
         padding-left: 50px;
       }
-      flex-basis: 25%;
+      // flex-basis: 25%;
+      width: 300px;
       .block{
         &__content{
           margin-bottom: 41px;
@@ -244,6 +245,7 @@
           min-height: 41px;
         }
         &__text{
+          padding: 0;
         }
       }
     }

@@ -1,5 +1,51 @@
 @import 'vars';
 
+
+
+
+@media (max-width: 1140px) {
+  .rent {
+    &-block {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      &__div:nth-child(1) {
+        width: 85%;
+      }
+      &__div+.rent-block__div{
+        padding-left: 0;
+        max-width:250px;
+        text-align: center;
+      }
+      &__div {
+
+        .block {
+          &__title {}       // class + class
+          .middle-title {}  // class + class
+        
+          &__content {
+          }
+          &__text {}
+        }
+        .btn-application {
+          margin: 0 0 50px 70px;
+        }
+        .card {
+          align-items: center;
+          &__num {}
+          
+          &__title {}
+          
+          .low-title {}
+          &__text {}
+        }
+      }
+    } 
+  }
+}
+
+
+
+
 @media (max-width: 1024px) {
   .top {
     &-block {
@@ -14,12 +60,21 @@
       }
       &__choice{
         width: 80%;
+        .slider {
+          &__description {
+            margin-bottom: 25px;
+          }
+        }
       }
     }
   }
 }
+
+
+
+
 @media (max-width: 860px) {
- .header{
+  .header{
    .menu{
      order:1;
      &__btn{
@@ -65,7 +120,32 @@
        }
      }
    }
- }
+  }
+  .rent {
+    &-block {
+      &__div:nth-child(1) {
+      }
+      &__div+.rent-block__div {
+        margin: 30px;
+      }
+      &__div {
+        .block {
+          &__title {} // class + class
+          .middle-title {} // class + class
+          &__content {}
+          &__text {}
+        }
+        .btn-application {
+        }
+        .card {
+          &__num {}
+          &__title {}
+          .low-title {}
+          &__text {}
+        }
+      }
+    }
+  }
 }
 
 
@@ -102,7 +182,6 @@
          width: 100%;
          .slider{
            &__description{
-             margin-bottom: 25px;
            }
          }
        }
@@ -112,7 +191,7 @@
 
 }
 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
   .top {
       &-block {
          &__content {
@@ -123,6 +202,45 @@
            }
          }
       }
+  }
+  .rent {
+    padding: 25px 0;
+    &-block {
+      &__div:nth-child(1) {}
+
+      &__div+.rent-block__div {
+        // margin: 0px;
+      }
+
+      &__div {
+        text-align: center;
+        .block {
+          &__title {}
+
+          // class + class
+          .middle-title {}
+
+          // class + class
+          &__content {}
+
+          &__text {}
+        }
+
+        .btn-application {
+          margin-left: 0;
+        }
+
+        .card {
+          &__num {}
+
+          &__title {}
+
+          .low-title {}
+
+          &__text {}
+        }
+      }
+    }
   }
 }
 
