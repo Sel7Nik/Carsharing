@@ -179,24 +179,16 @@
             &-link {
               margin-right: 20px;
               cursor: pointer;
-              border-bottom: solid transparent 1px;
-              transition: all .5s; //
+              border-bottom: solid $dark 1px;
               padding-bottom: 5px;
-              &:hover{
-                border-bottom: solid $dark 1px;
-              }
+
             }
           }   
           &__contract {
             &-link {
               border-bottom: solid $dark 1px;
               cursor: pointer;
-              border-bottom: solid transparent 1px;
-              transition: all .5s; //
               padding-bottom: 5px;
-              &:hover {
-                border-bottom: solid $dark 1px;
-              }
             }
           }
         }

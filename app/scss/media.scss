@@ -68,7 +68,7 @@
  }
 }
 
-@media (max-width: 720px) {}
+
 
 @media (max-width: 768px) {
    .top {
@@ -124,4 +124,34 @@
          }
       }
   }
+}
+
+
+
+@media (max-width: 400px) {
+  .top {
+    &-block {
+      &__choice {
+        &-use {
+          .use {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            &__rental {
+              margin-bottom: 20px;
+              &-link {
+                margin: 10px 45px;
+              }
+            }
+            &__contract {
+              margin-bottom: 15px;
+              &-link {
+                margin: 10px 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
 }

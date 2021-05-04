@@ -236,19 +236,12 @@ ul.slick-dots {
       .top-block__choice-use .use__rental-link {
         margin-right: 20px;
         cursor: pointer;
-        border-bottom: solid transparent 1px;
-        transition: all .5s;
+        border-bottom: solid #1b1818 1px;
         padding-bottom: 5px; }
-        .top-block__choice-use .use__rental-link:hover {
-          border-bottom: solid #1b1818 1px; }
       .top-block__choice-use .use__contract-link {
         border-bottom: solid #1b1818 1px;
         cursor: pointer;
-        border-bottom: solid transparent 1px;
-        transition: all .5s;
         padding-bottom: 5px; }
-        .top-block__choice-use .use__contract-link:hover {
-          border-bottom: solid #1b1818 1px; }
 
 .rent {
   width: 100%;
@@ -512,3 +505,17 @@ ul.slick-dots {
 @media (max-width: 620px) {
   .top-block__content .group__item {
     width: 50%; } }
+
+@media (max-width: 400px) {
+  .top-block__choice-use .use {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .top-block__choice-use .use__rental {
+      margin-bottom: 20px; }
+      .top-block__choice-use .use__rental-link {
+        margin: 10px 45px; }
+    .top-block__choice-use .use__contract {
+      margin-bottom: 15px; }
+      .top-block__choice-use .use__contract-link {
+        margin: 10px 45px; } }
