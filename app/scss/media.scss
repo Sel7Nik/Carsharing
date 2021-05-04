@@ -1,0 +1,127 @@
+@import 'vars';
+
+@media (max-width: 1024px) {
+  .top {
+    &-block {
+      flex-direction: column;
+      align-items: center;
+      max-width: 768px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      &__content{
+        width: 80%;
+        padding: 40px 0;
+      }
+      &__choice{
+        width: 80%;
+      }
+    }
+  }
+}
+@media (max-width: 860px) {
+ .header{
+   .menu{
+     order:1;
+     &__btn{
+       display: block;
+       width: 35px;
+       height: 25px;
+       border:none;
+       border-top: 2px solid $accent;
+       border-bottom: 2px solid $accent;
+       background-color: transparent;
+       position: relative;
+       &::before{
+         content:'';
+         position: absolute;
+         width: 35px;
+         height: 2px;
+         top: 9px;
+         left: 0;
+         background-color: $accent;
+
+       }
+     }
+     &-list.menu-list_active{
+       transform: translateY(0px);
+     }
+     &-list{
+       display: block;
+       position: absolute;
+       top: 100px;
+       left: 0;
+       right: 0;
+       background-color: $brand;
+       text-align: center;
+       padding: 20px 0;
+       transform: translateY(-500px);
+       transition: all 1.5s;
+       &__item{
+         margin: 0;
+         &-link{
+           padding: 20px 0;
+           display: block;
+         }
+       }
+     }
+   }
+ }
+}
+
+@media (max-width: 720px) {}
+
+@media (max-width: 768px) {
+   .top {
+     &-block {
+       flex-direction: column;
+       align-items: center;
+       max-width: 640px;
+       margin: 0 auto;
+       padding-bottom: 20px;
+
+       &__content {
+         width: 100%;
+         padding: 10px 0;
+         .title{
+
+         }
+         .motive{
+           margin-bottom: 50px;
+         }
+         .group{
+           margin-top: 50px;
+           flex-wrap: wrap;
+           &__item{
+             margin: 0 25px 25px;
+           }
+
+         }
+       }
+
+       &__choice {
+         width: 100%;
+         .slider{
+           &__description{
+             margin-bottom: 25px;
+           }
+         }
+       }
+     }
+
+   }
+
+}
+
+@media (max-width: 620px) {
+  .top {
+      &-block {
+         &__content {
+           .group{
+             &__item {
+               width: 50%;
+             }
+           }
+         }
+      }
+  }
+}

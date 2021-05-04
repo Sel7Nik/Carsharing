@@ -6,7 +6,17 @@ $(function () {
     autoplay:true,
     autoplaySpeed: 9000,
     fade:true,
+     responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        dots: false
+      }
+    },
+  ]
   });
+
+
   $('.reviews-content').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -15,6 +25,8 @@ $(function () {
   });
 
 
-
+$('.menu__btn').on('click', function(){
+  $('.menu-list').toggleClass('menu-list_active')
+})
 
 })

@@ -10,10 +10,14 @@
 .header{
   &__inner{
     height: 100px; //
+
   }
 }
 
 .menu{
+  &__btn {
+    display: none;
+  }
   &-list{
     &__item{
       
@@ -80,7 +84,7 @@
         margin-top: 104px;
         width: 100%;
 
-        .group__item {
+        &__item {
           border: 1px $brand solid;
           width: 150px;
           height: 150px;
@@ -460,8 +464,6 @@
     }
   }
 }
-
-
 .footer {
   height: 200px; //
   &__inner {
@@ -493,3 +495,10 @@
     // }
   }
 }
+
+
+
+
+
+
+@import 'media';
