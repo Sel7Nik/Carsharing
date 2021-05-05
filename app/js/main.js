@@ -1,9 +1,11 @@
 $(function () {
 
   $('.top-block__choice-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows:false,
     dots:true,
-    autoplay:true,
+    // autoplay:true,
     autoplaySpeed: 9000,
     fade:true,
      responsive: [
